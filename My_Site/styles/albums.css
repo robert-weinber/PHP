@@ -1,0 +1,129 @@
+﻿div#switcher{
+	position: relative;
+    font-size: 3vh;
+	width: 40vw;
+	left: 3%;
+	height: 8vh;
+}
+div#alb{
+	position: absolute;
+    font-size: 3vh;
+	width: 49%;
+	height: 100%;
+  cursor: pointer;
+
+}
+div#vid{
+	position: absolute;
+    font-size: 3vh;
+	top:0;
+	left: 50%;
+	width: 49%;
+	height: 100%;
+  cursor: pointer;
+}
+p.switchtitle{
+	position: relative;
+	top:1.2vh;
+	margin-top:0;
+	text-align: center;	
+    font-size: 5vh;
+}
+div.albumHolder{
+	position: relative;
+    font-size: 3vh;
+	width: 97%;
+	left: 3%;
+	height: auto;
+	}
+div.albumTitle{
+	text-align: center;	
+	position: relative;
+	valign: middle;
+	height:7vh;
+	width: 90%;
+	max-width: 80vh;
+	-moz-border-radius: 20vw;
+  -webkit-border-radius: 20vw;
+  border-radius: 20vw;
+-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  cursor: pointer;
+}
+div.vidTitle{
+	text-align:left;
+	position: relative;
+	valign: middle;
+    font-size: 3vh;
+	height:7vh;
+	width: 90%;
+	max-width: 80vh;
+}
+div.albumContent{
+	position: relative;
+	display: -webkit-flex;
+    display: flex;
+	-webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+	-webkit-align-content: space-around;
+    align-content: space-around;
+	text-align: center;	
+	opacity: 0.001;
+	left: -100vw;
+}
+
+@-webkit-keyframes albumin {
+    from {left: -100%;}
+    to {left: 0%;}
+}
+
+@keyframes albumin {
+    from {left: -100%;}
+    to {left: 0%;}
+}
+
+div.photo{
+	width: 34vh;
+	height: 20.25vh;
+	max-width:45vw;
+	max-height:22.5vw;
+	min-width:10vw;
+}
+div.photo img{
+	width: 90%;
+	height: 90%;
+	margin: 5%;
+}
+div.photoHolderLarge{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+img.photoLarge{
+	position: absolute;
+	display: block;
+}
+img.closeBtn{
+	width: 10vh;
+	height: 10vh;
+	max-width:15vw;
+	max-height:15vw;
+	top:5vh;
+	position: absolute;
+	display: block;
+}
+div.photoBack{
+	position: absolute;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+}

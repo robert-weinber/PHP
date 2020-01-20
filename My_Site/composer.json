@@ -1,0 +1,7 @@
+ {
+     "require": {
+         "microsoft/windowsazure": "^0.4",
+    "sendgrid/sendgrid": "~5.1"
+
+     }
+ }

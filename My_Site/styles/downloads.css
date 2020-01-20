@@ -1,0 +1,32 @@
+﻿button.downloadHolder{
+		position: relative;
+		left: 3%;
+	height:7vh;
+	width: 90%;
+		max-width: 80vh;
+		transition:all 0.5s ease;
+		
+  border: 1px;
+	-moz-border-radius: 10vw;
+  -webkit-border-radius: 10vw;
+  border-radius: 10vw;
+  cursor: pointer;
+	}
+	div.downloadLink{
+		float:left;
+		width: 7vh;
+	}
+	img.downloadImg{
+		height: 100%;
+		width: 100%;
+	}
+	div.downloadText{
+		float:left;
+		height: 100%;
+	}
+	div.downloadName{
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+		font-size: 3vh;
+	}

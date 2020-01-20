@@ -1,0 +1,441 @@
+﻿span.inic{
+font-size: 4vw;
+}
+div#headerbar{
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 6vw;
+	width: 100%;
+	/*max-width: 140vh;*/
+	z-index: 2;
+}
+img#banner{
+	float: left;
+	height: 6vw;
+	width: 8.8%;
+	/*width: 15vh;*/
+	z-index: 0;
+}
+p#organ{
+	position: relative;
+	float: left;
+	top: 0.5vw;
+	right:0;
+	margin-left:0;
+	margin-top:0;
+	height: 6vw;
+	font-size:3vw;
+	text-align:center;
+	width: 91.2%;
+	
+}
+p h1{
+	white-space: nowrap ;
+	font-size: 4vw;
+}
+div#content{
+	position: absolute;
+	top: calc(6vh + 6.5vw);
+	left:2%;
+	width: 77%;
+	/*height: calc(94vh - 6.5vw);          ////SCROLLBAR
+	overflow-x: hidden;*/
+	z-index: 0;
+	padding-right:45vw;
+	text-align: justify;                /*SORKIZÁRÁS*/
+    text-justify: inter-word;
+
+}
+div#banners{
+	position: absolute;
+	top: calc(20vh + 6.5vw);
+	left: 77%;
+	width: 23%;
+	/*height: calc(80vh - 6.5vw);
+	overflow: auto;*/
+	z-index: 1;
+	padding-right:1vw;
+}
+h4#bannerTitle{
+	font-size: 3vh;
+}
+div#banners.mobile h4#bannerTitle{
+	text-align: center;
+}
+body{	
+	overflow-x:hidden;
+}
+div#welcomeText{
+	position: relative;
+	width: 80%;
+	/*font-size: 2.6vh;*/
+}
+div#aszerText{
+	top: 1vh;
+}
+div#aszerText{
+	position: relative;
+	width: 80%;
+	font-size: 2.6vh;
+}
+div#content.mobile div#welcomeText{
+	position: relative;
+	width: 100%;
+	font-size: 2.6vh;
+}
+div#content.mobile div#aszerText{
+	position: relative;
+	width: 100%;
+	font-size: 2.6vh;
+}
+div#contactText{
+	position: relative;
+	left: 2%;
+	width: 100%;
+	font-size:2.5vh;
+}
+div#content.mobile div#contactText{
+	width: 100%;
+}
+img.bannerImg{
+	position:relative;
+	/*right: 5vh;*/
+	width: 70%;
+	z-index: 0;
+	margin-bottom: 10vh;
+}
+div#banners.mobile img.bannerImg{
+	left: 25%;
+}
+div#content.mobile{
+	position: relative;
+	top: calc(6vh + 6.5vw);
+	left: 0;
+	width: 100%;
+	height: initial;
+	overflow-x: hidden;
+	z-index: 0;
+	padding-right:0;
+	padding-bottom:3vh;
+}
+div#banners.mobile{
+	position: relative;
+	top: 5vh;
+	left: 0;
+	width: 100%;
+	overflow: auto;
+	height: initial;
+	z-index: 0;
+	padding-right:2vh;
+}
+span.vmiddle{
+	display: block;
+	margin: auto;
+	position:relative;
+	top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  text-align: center;
+  margin-top: auto;
+margin-bottom: auto;
+-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+}
+ul#menu{
+	position: relative;
+	top: 0;
+	vertical-align: center;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	height: 100%;
+	width: 72%;
+    overflow: hidden;
+    background-color: #333;
+		z-index: 2;
+}
+div#menuwrapper.mobile ul#menu{
+	width: 60%;
+}
+div#menuwrapper.mobile ul#menu:focus{
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	height:30vh;
+}
+ul li.menuelem {
+	display: block;
+	position: relative;
+    float: left;
+	width: calc(99.9% / 5);
+	height: 100%;
+	vertical-align: center;
+	z-index:2;
+}
+div#menuwrapper.mobile ul#menu li.menuelem {
+	width: 100%;
+	height: 5vh;
+	vertical-align: center;
+}
+/*a {
+	
+}*/
+li.menuelem a {
+	position: relative;
+	height: 100%;
+    display: block;
+	vertical-align: center;
+    text-align: center;
+    text-decoration: none;
+    transition:background-color 0.5s ease;
+    -webkit-transition:background-color 0.5s ease;
+    -moz-transition:background-color 0.5s ease;
+    -o-transition:background-color 0.5s ease;
+	z-index:2;
+    font-size: 1.8vw;
+}
+div#menuwrapper.mobile ul#menu li.menuelem a {
+	height:5vh;
+    font-size: 3.5vh;
+}
+div#menuwrapper{
+	position: fixed;
+	top:6vw;
+	left: 0;
+	height: 5vh;
+	width: 100%;
+	/*max-width: 140vh;*/
+	z-index: 2;
+}
+div#searchholder{
+	position: fixed;
+	top: calc(5vh + 6.5vw);
+	right: 0;
+	height: 5vh;
+	width: 5vh;
+	overflow: hidden;
+	border-radius: 0.5vh;
+	/*max-width: 140vh;*/
+	z-index: 1;
+}
+img#searchexpand{
+	position: absolute;
+	bottom:0;
+	text-align: right;
+	height: 5vh;
+	width: 5vh;
+	left:0;
+	/*max-width: 140vh;*/
+	z-index: 5;
+    cursor:pointer;
+}
+div#searchbar{
+	position: absolute;
+	bottom:0;
+	text-align: right;
+	height: 5vh;
+	width: calc(30vw - 10vh);
+	left:10vh;
+	/*max-width: 140vh;*/
+	z-index: 5;
+}
+#searchtext{
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	width: 70%;
+	height: 60%;	
+}
+#searchbutton{
+	position: absolute;
+	left: 77%;
+	top: 10%;
+	width: 22%;
+	height: 70%;
+    font-size: 1.5vh;	
+}
+div#loginmenu {
+	top: 0;
+	position: absolute;
+	height: 5vh;
+	width: 28%;
+	left: 72%;
+    display: block;
+    text-align: center;
+    font-size: 3.5vh;
+    text-decoration: none;
+   /* transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;*/
+	overflow: hidden;
+	z-index: 5;
+}
+div#loginmenu.mobile {
+    font-size: 2.3vh;
+	width: 40%;
+	left: 60%;	
+}
+div#logindropdownIn {
+	display: none;
+	position: absolute;
+	height: 7vh;
+	width: 28%;
+	left: 72%;
+	top: 100%;
+    text-align: center;
+    font-size: 1.3vW;
+    text-decoration: none;
+	overflow: hidden;
+	z-index: 4;
+}
+div#menuwrapper.mobile div#logindropdownIn{
+	width: 40%;
+	left: 60%;		
+}
+div#logindropdownOut {
+	display: none;
+	position: absolute;
+	width: 28%;
+	height: 340%;
+	left: 72%;
+	top: 100%;
+    text-align: right;
+    font-size: 2.4vh;
+    text-decoration: none;
+	overflow: hidden;
+	z-index: 4;
+}
+div#menuwrapper.mobile div#logindropdownOut{
+	width: 40%;
+	left: 60%;		
+}
+div.pwLog{
+	width:90%;
+	height: 35%;
+	right: 10%;
+}
+@-webkit-keyframes floatin {
+    from {top: -20%;}
+    to {top: 100%;}
+}
+
+@keyframes floatin {
+    from {top: -20%;}
+    to {top: 100%;}
+}
+div#arrow{
+	position: absolute;
+	right: 0%;
+	height: 100%;
+	width: 20%;
+}
+img#arrow{	
+    cursor:pointer;
+	right:5%;
+	height: 100%;
+	width: auto;
+}
+div#loginMessage{
+	position: absolute;
+	right: 20%;
+	top: 0;
+	height: 100%;
+	width: 80%;
+}
+span#myname a{
+    text-decoration: none;
+	}
+div#loginmenu.mobile span#myname{
+	display: block;
+}
+form#loginForm{
+	width:100%;
+	height: 100%;
+	margin: 0;
+}
+.regBtn{
+	width: 25%;
+	height: 20%;
+	padding: 0%;
+	position: absolute;
+	bottom:6%;
+	left:40%;
+    display:inline-block;
+}
+.newPwBtn{
+	width: 25%;
+	height: 20%;
+	padding: 0%;
+	position: absolute;
+	bottom:6%;
+	left:70%;
+    display:inline-block;
+}
+.regBtn button{
+	width: 100%;
+	height: 100%;
+	font-size: 1vw;
+}
+.newPwBtn button{
+	width: 100%;
+	height: 100%;
+	font-size: 1vw;
+}
+.logintext{
+	width:50%
+}
+.loginBtn{
+	width: 25%;
+	height: 20%;
+	font-size: 1vw;
+	padding: 0%;
+	position: absolute;
+	bottom:6%;
+	left:10%;
+    display:inline-block;
+}
+.loggedinBtn{
+	height: 70%;
+	width:80%;
+    font-size: 1.2vw;
+}
+.loggedinForm{
+	float: left;
+	height: 100%;
+	width:50%;
+}
+
+.rotated {
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+    -webkit-transform: rotate(180deg);  /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(180deg);  /* Firefox 3.5-15 */
+    -ms-transform: rotate(180deg);  /* IE 9 */
+    -o-transform: rotate(180deg);  /* Opera 10.50-12.00 */
+    transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
+div#map{
+	position:absolute;
+	left:5vw;
+	bottom:5vw;
+	text-align: center;
+	width:60vh;
+	height:50vh;
+    max-width:90vw;	
+}
+div#mapHolder{
+	width:100%;
+	height:80%;
+}
+iframe#mapIframe{
+	width:100%;
+	height:100%;
+	border:0;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}

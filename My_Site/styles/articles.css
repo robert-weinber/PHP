@@ -1,0 +1,153 @@
+﻿div.article{
+	position: relative;
+	left: 3%;
+	/*height:20vh;*/
+	width: 90%;
+	max-width: 100%;
+	/*transition:all 1s ease;*/
+	overflow-x: hidden;
+	overflow-y: hidden;
+	/*-moz-border-radius: 20vw;
+  -webkit-border-radius: 20vw;
+  border-radius: 20vw;*/
+}
+div.article.expanded{
+display: block;
+}
+/*div.article:hover{
+	border: 1px solid black;
+}*/
+div.artTitle{
+	position: absolute;
+	font-weight: bold;
+	width:auto;
+	left: 31vh;
+    font-size: 3.2vh;
+	top:0;
+}
+/*:not(.expanded):not(:last-child)*/
+div#content.mobile div.artTitle{
+	left: 20.5vh;
+    font-size: 3vh;
+}
+div.artText{
+	position: absolute;
+	width:auto;
+	left: 31vh;
+	top: 20%;
+	overflow:hidden;
+    font-size: 2.2vh;
+}
+div#content.mobile div.artText{
+	left: 20.5vh;
+	top: 20%;
+	overflow:hidden;
+    font-size: 3vh;
+}
+div.artText img, iframe{
+	display:none;
+}
+div.expanded div.artText img, iframe{
+	display:block;
+	max-width:100%;
+	min-width:40%;
+}
+/*div.artDate{
+	display:none;
+    font-size: 3vh;
+}*/
+img.artImg{
+	width:30vh;
+	height:20vh;
+}
+div#content.mobile img.artImg{
+	width:19vh;
+	height:13vh;
+}
+div.expanded img.artImg{
+	display:none;
+}
+div.expanded div.artTitle{
+	position: relative;
+	left: 0%;
+	width:100%;
+}
+div.expanded div.artText{
+	position: relative;
+	left: 0%;
+	/*top:5%;*/
+	top:0;
+	width:100%;
+	overflow:auto;
+	/*bottom:5%;*/
+}
+div#content.mobile div.expanded div.artTitle{
+    font-size: 4vh;
+	position: relative;
+	left: 0%;
+	width:100%;
+}
+div#content.mobile div.expanded div.artText{
+	position: relative;
+	left: 0%;
+	/*top:5%;*/
+	top:0;
+	width:100%;
+	overflow:auto;
+	/*bottom:5%;*/
+}
+/*div.expanded div.artDate{
+	display: block;
+	position: relative;	
+	left:0;
+}*/
+button.articleExpander{
+	position: absolute;
+	right: 0vh;
+	bottom: 0vh;
+    border: none;
+    font-size: 3vh;
+	font-weight: bold;
+	cursor: pointer;
+	width: 13vh;
+	height: 4vh;
+	z-index:3;
+}
+img.bottomFade{
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 30vh);
+	height:9vh;
+	opacity: 0.8;
+	z-index:2;
+}
+div#content.mobile img.bottomFade{
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 19vh);
+	height:9vh;
+	opacity: 0.8;
+	z-index:2;
+}
+div.expanded img.bottomFade{
+	display: none;
+}
+div.expanded button.articleExpander{
+	opacity: 0.5;
+}
+table#articles{
+	width: 30%;
+}
+img.artYT{
+	width:60vw;	
+	height:34vw;	
+}
+img.imgLarge{
+	width:100%;	
+}
+img.imgMedium{
+	width:50%;	
+}
+img.imgSmall{
+	width:10%;	
+}
